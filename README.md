@@ -14,11 +14,11 @@
 - [ACTUACIÓN EN CLASE NO. 1]
   
 
-# **Presentación** 🤗
+# **Presentación** 
 Buenas a todos, profesor y compañeros, esta es la actuación en clase con los ejercicios solicitados el día 22/1/2025. Todos los ejercicios están hechos en C#.
 
 
-## **Contenidos del repositorio** 🐱‍💻
+## **Contenidos del repositorio** 
 Se realizaron los siguientes ejercicios:
 
 -Adivinar un número.
