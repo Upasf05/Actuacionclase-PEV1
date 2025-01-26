@@ -1,22 +1,22 @@
 using System;
 
-namespace EdadVoto
+namespace EdadVoto //Nombre del programa.
 {
-    internal class Program
+    internal class Program //Clase interna.
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //Metodo principal.
         {
-            Console.WriteLine("Ingrese su edad:");
+            Console.WriteLine("Ingrese su edad:"); //Solicitar el ingreso de edad.
 
-            int edad = int.Parse(Console.ReadLine());
+            int edad = int.Parse(Console.ReadLine()); //Leer el valor entero edad.
 
-            if (edad >= 18)
+            if (edad >= 18) //Verificar si el numero (en este caso la edad) es mayor a 18.
             {
-                Console.WriteLine("Ya puedes votar");
+                Console.WriteLine("Ya puedes votar"); //Mensaje si el numero es 18 o mayor.
             }
-            else
+            else //Activar el else si el numero es menor.
             {
-                Console.WriteLine("No puedes votar aun");
+                Console.WriteLine("No puedes votar aun"); //Mensaje si el numero es menor.
             }
         }
     }
