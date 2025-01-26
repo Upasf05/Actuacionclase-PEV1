@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace grupo1
+namespace grupo1 //Nombre del programa
 {
-    internal class Program
+    internal class Program //Clase interna
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //Metodo principal 
         {
             // Llamada al metodo adivinarnumero
             Program program = new Program();
@@ -30,33 +30,33 @@ namespace grupo1
         /// paso 8= sio el es mayor debe imprimir  un numero menor 
         /// paso 9= se repite del paso 4 hasta que que el usuario cumpla 
         /// </summary>
-        public int generanumero()
+        public int generanumero() //Crear el numero aleatorio como un entero
         {
-            Random random = new Random();
-            return random.Next(1, 101);
+            Random random = new Random(); //Usar la funcion random para determinar el valor del numero
+            return random.Next(1, 101); //Rango numerico que limita el valor aleatorio del numero
         }
 
-        public void adivinarnumero()
+        public void adivinarnumero() //Funcion para adivinar el numero
         {
-            int intento;
-            int numero_secreto = generanumero();
-            bool adivinar = false;
+            int intento; //Intento del usuario como un valor entero
+            int numero_secreto = generanumero(); //Numero a adivinar como otro entero
+            bool adivinar = false; 
             Console.WriteLine("Adivina un numero entre 1 al 100:");
-            while (!adivinar)
+            while (!adivinar) //Funcion while donde se adivina el numero
             {
-                Console.WriteLine("Ingrese un numero entre 1 al 100:");
+                Console.WriteLine("Ingrese un numero entre 1 al 100:"); //Mensaje que solicita la introduccion de un entero entre 1 y 100
                 intento = int.Parse(Console.ReadLine());
 
-                if (intento == numero_secreto)
+                if (intento == numero_secreto) //Verificar si el numero fue adivinado correctamente
                 {
                     Console.WriteLine($"El numero adivinado es {intento}!");
                     adivinar = true;
                 }
-                else if (intento < numero_secreto)
+                else if (intento < numero_secreto) //Si el numero es menor al adivinado
                 {
                     Console.WriteLine("El numero es mayor!");
                 }
-                else
+                else //Si el numero es mayor al adivinado
                 {
                     Console.WriteLine("El numero es menor!");
                 }
